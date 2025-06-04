@@ -1,0 +1,842 @@
+[gd_scene load_steps=15 format=3 uid="uid://cbv7olgorpyrn"]
+
+[ext_resource type="Texture2D" uid="uid://caldo6xdah16x" path="res://Sprite/Dungeon1_QR.png" id="1_2f3dj"]
+[ext_resource type="Script" uid="uid://qy3uiwmfy7xi" path="res://scripts/display_array.gd" id="1_5d22s"]
+[ext_resource type="Texture2D" uid="uid://dippjfdqaacsc" path="res://Sprite/blank_square.png" id="1_oc1lo"]
+[ext_resource type="Script" uid="uid://chyag4101crcb" path="res://scripts/game_manager.gd" id="3_y15ei"]
+[ext_resource type="Script" uid="uid://cvew1u6go6ywu" path="res://scripts/sound_player.gd" id="4_4168y"]
+[ext_resource type="Script" uid="uid://73gtkkalwf8h" path="res://scripts/conductor.gd" id="4_sffhh"]
+[ext_resource type="Texture2D" uid="uid://su2vis64dv7j" path="res://Sprite/badc_qr_large.png" id="5_tel4y"]
+[ext_resource type="Texture2D" uid="uid://dmf63a4uu7cxg" path="res://Sprite/neongarten_qr_large.png" id="6_qkpxi"]
+[ext_resource type="Script" uid="uid://dgbkjn1sgh4yg" path="res://scripts/beat_display.gd" id="6_surke"]
+[ext_resource type="Texture2D" uid="uid://dgyk506ijqvwh" path="res://Sprite/wadc_qr_large.png" id="7_5q0nq"]
+[ext_resource type="Script" uid="uid://vkvuefwhr0gq" path="res://scripts/map_reader.gd" id="7_dngg8"]
+[ext_resource type="Script" uid="uid://birxtdf4juslo" path="res://scripts/map_display.gd" id="8_fk1fs"]
+[ext_resource type="Script" uid="uid://bms7rku70y0yw" path="res://scripts/ui_display.gd" id="9_l8kbo"]
+[ext_resource type="AudioStream" uid="uid://drngck6o8io4t" path="res://music/Tutorial.wav" id="23_vxglm"]
+
+[node name="Main Game" type="Node2D"]
+
+[node name="Background" type="TextureRect" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_right = 256.0
+offset_bottom = 144.0
+texture = ExtResource("1_oc1lo")
+
+[node name="QR Code" type="TextureRect" parent="."]
+offset_left = -768.0
+offset_top = -832.0
+offset_right = 288.0
+offset_bottom = 224.0
+pivot_offset = Vector2(528, 528)
+texture = ExtResource("1_2f3dj")
+
+[node name="Display Array" type="Node2D" parent="." node_paths=PackedStringArray("row_a", "row_b", "row_c", "row_d", "row_e", "row_f", "row_g", "row_h", "row_i")]
+script = ExtResource("1_5d22s")
+row_a = NodePath("Row A")
+row_b = NodePath("Row B")
+row_c = NodePath("Row C")
+row_d = NodePath("Row D")
+row_e = NodePath("Row E")
+row_f = NodePath("Row F")
+row_g = NodePath("Row G")
+row_h = NodePath("Row H")
+row_i = NodePath("Row I")
+
+[node name="Row A" type="Node2D" parent="Display Array"]
+
+[node name="Pixel 1" type="Sprite2D" parent="Display Array/Row A"]
+position = Vector2(8, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 2" type="Sprite2D" parent="Display Array/Row A"]
+position = Vector2(24, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 3" type="Sprite2D" parent="Display Array/Row A"]
+position = Vector2(40, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 4" type="Sprite2D" parent="Display Array/Row A"]
+position = Vector2(56, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 5" type="Sprite2D" parent="Display Array/Row A"]
+position = Vector2(72, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 6" type="Sprite2D" parent="Display Array/Row A"]
+position = Vector2(88, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 7" type="Sprite2D" parent="Display Array/Row A"]
+position = Vector2(104, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 8" type="Sprite2D" parent="Display Array/Row A"]
+position = Vector2(120, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 9" type="Sprite2D" parent="Display Array/Row A"]
+position = Vector2(136, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 10" type="Sprite2D" parent="Display Array/Row A"]
+position = Vector2(152, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 11" type="Sprite2D" parent="Display Array/Row A"]
+position = Vector2(168, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 12" type="Sprite2D" parent="Display Array/Row A"]
+position = Vector2(184, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 13" type="Sprite2D" parent="Display Array/Row A"]
+position = Vector2(200, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 14" type="Sprite2D" parent="Display Array/Row A"]
+position = Vector2(216, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 15" type="Sprite2D" parent="Display Array/Row A"]
+position = Vector2(232, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 16" type="Sprite2D" parent="Display Array/Row A"]
+position = Vector2(248, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Row B" type="Node2D" parent="Display Array"]
+position = Vector2(0, 16)
+
+[node name="Pixel 1" type="Sprite2D" parent="Display Array/Row B"]
+position = Vector2(8, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 2" type="Sprite2D" parent="Display Array/Row B"]
+position = Vector2(24, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 3" type="Sprite2D" parent="Display Array/Row B"]
+position = Vector2(40, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 4" type="Sprite2D" parent="Display Array/Row B"]
+position = Vector2(56, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 5" type="Sprite2D" parent="Display Array/Row B"]
+position = Vector2(72, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 6" type="Sprite2D" parent="Display Array/Row B"]
+position = Vector2(88, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 7" type="Sprite2D" parent="Display Array/Row B"]
+position = Vector2(104, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 8" type="Sprite2D" parent="Display Array/Row B"]
+position = Vector2(120, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 9" type="Sprite2D" parent="Display Array/Row B"]
+position = Vector2(136, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 10" type="Sprite2D" parent="Display Array/Row B"]
+position = Vector2(152, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 11" type="Sprite2D" parent="Display Array/Row B"]
+position = Vector2(168, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 12" type="Sprite2D" parent="Display Array/Row B"]
+position = Vector2(184, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 13" type="Sprite2D" parent="Display Array/Row B"]
+position = Vector2(200, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 14" type="Sprite2D" parent="Display Array/Row B"]
+position = Vector2(216, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 15" type="Sprite2D" parent="Display Array/Row B"]
+position = Vector2(232, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 16" type="Sprite2D" parent="Display Array/Row B"]
+position = Vector2(248, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Row C" type="Node2D" parent="Display Array"]
+position = Vector2(0, 32)
+
+[node name="Pixel 1" type="Sprite2D" parent="Display Array/Row C"]
+position = Vector2(8, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 2" type="Sprite2D" parent="Display Array/Row C"]
+position = Vector2(24, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 3" type="Sprite2D" parent="Display Array/Row C"]
+position = Vector2(40, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 4" type="Sprite2D" parent="Display Array/Row C"]
+position = Vector2(56, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 5" type="Sprite2D" parent="Display Array/Row C"]
+position = Vector2(72, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 6" type="Sprite2D" parent="Display Array/Row C"]
+position = Vector2(88, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 7" type="Sprite2D" parent="Display Array/Row C"]
+position = Vector2(104, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 8" type="Sprite2D" parent="Display Array/Row C"]
+position = Vector2(120, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 9" type="Sprite2D" parent="Display Array/Row C"]
+position = Vector2(136, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 10" type="Sprite2D" parent="Display Array/Row C"]
+position = Vector2(152, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 11" type="Sprite2D" parent="Display Array/Row C"]
+position = Vector2(168, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 12" type="Sprite2D" parent="Display Array/Row C"]
+position = Vector2(184, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 13" type="Sprite2D" parent="Display Array/Row C"]
+position = Vector2(200, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 14" type="Sprite2D" parent="Display Array/Row C"]
+position = Vector2(216, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 15" type="Sprite2D" parent="Display Array/Row C"]
+position = Vector2(232, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 16" type="Sprite2D" parent="Display Array/Row C"]
+position = Vector2(248, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Row D" type="Node2D" parent="Display Array"]
+position = Vector2(0, 48)
+
+[node name="Pixel 1" type="Sprite2D" parent="Display Array/Row D"]
+position = Vector2(8, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 2" type="Sprite2D" parent="Display Array/Row D"]
+position = Vector2(24, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 3" type="Sprite2D" parent="Display Array/Row D"]
+position = Vector2(40, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 4" type="Sprite2D" parent="Display Array/Row D"]
+position = Vector2(56, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 5" type="Sprite2D" parent="Display Array/Row D"]
+position = Vector2(72, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 6" type="Sprite2D" parent="Display Array/Row D"]
+position = Vector2(88, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 7" type="Sprite2D" parent="Display Array/Row D"]
+position = Vector2(104, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 8" type="Sprite2D" parent="Display Array/Row D"]
+position = Vector2(120, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 9" type="Sprite2D" parent="Display Array/Row D"]
+position = Vector2(136, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 10" type="Sprite2D" parent="Display Array/Row D"]
+position = Vector2(152, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 11" type="Sprite2D" parent="Display Array/Row D"]
+position = Vector2(168, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 12" type="Sprite2D" parent="Display Array/Row D"]
+position = Vector2(184, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 13" type="Sprite2D" parent="Display Array/Row D"]
+position = Vector2(200, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 14" type="Sprite2D" parent="Display Array/Row D"]
+position = Vector2(216, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 15" type="Sprite2D" parent="Display Array/Row D"]
+position = Vector2(232, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 16" type="Sprite2D" parent="Display Array/Row D"]
+position = Vector2(248, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Row E" type="Node2D" parent="Display Array"]
+position = Vector2(0, 64)
+
+[node name="Pixel 1" type="Sprite2D" parent="Display Array/Row E"]
+position = Vector2(8, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 2" type="Sprite2D" parent="Display Array/Row E"]
+position = Vector2(24, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 3" type="Sprite2D" parent="Display Array/Row E"]
+position = Vector2(40, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 4" type="Sprite2D" parent="Display Array/Row E"]
+position = Vector2(56, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 5" type="Sprite2D" parent="Display Array/Row E"]
+position = Vector2(72, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 6" type="Sprite2D" parent="Display Array/Row E"]
+position = Vector2(88, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 7" type="Sprite2D" parent="Display Array/Row E"]
+position = Vector2(104, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 8" type="Sprite2D" parent="Display Array/Row E"]
+position = Vector2(120, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 9" type="Sprite2D" parent="Display Array/Row E"]
+position = Vector2(136, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 10" type="Sprite2D" parent="Display Array/Row E"]
+position = Vector2(152, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 11" type="Sprite2D" parent="Display Array/Row E"]
+position = Vector2(168, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 12" type="Sprite2D" parent="Display Array/Row E"]
+position = Vector2(184, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 13" type="Sprite2D" parent="Display Array/Row E"]
+position = Vector2(200, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 14" type="Sprite2D" parent="Display Array/Row E"]
+position = Vector2(216, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 15" type="Sprite2D" parent="Display Array/Row E"]
+position = Vector2(232, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 16" type="Sprite2D" parent="Display Array/Row E"]
+position = Vector2(248, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Row F" type="Node2D" parent="Display Array"]
+position = Vector2(0, 80)
+
+[node name="Pixel 1" type="Sprite2D" parent="Display Array/Row F"]
+position = Vector2(8, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 2" type="Sprite2D" parent="Display Array/Row F"]
+position = Vector2(24, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 3" type="Sprite2D" parent="Display Array/Row F"]
+position = Vector2(40, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 4" type="Sprite2D" parent="Display Array/Row F"]
+position = Vector2(56, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 5" type="Sprite2D" parent="Display Array/Row F"]
+position = Vector2(72, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 6" type="Sprite2D" parent="Display Array/Row F"]
+position = Vector2(88, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 7" type="Sprite2D" parent="Display Array/Row F"]
+position = Vector2(104, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 8" type="Sprite2D" parent="Display Array/Row F"]
+position = Vector2(120, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 9" type="Sprite2D" parent="Display Array/Row F"]
+position = Vector2(136, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 10" type="Sprite2D" parent="Display Array/Row F"]
+position = Vector2(152, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 11" type="Sprite2D" parent="Display Array/Row F"]
+position = Vector2(168, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 12" type="Sprite2D" parent="Display Array/Row F"]
+position = Vector2(184, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 13" type="Sprite2D" parent="Display Array/Row F"]
+position = Vector2(200, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 14" type="Sprite2D" parent="Display Array/Row F"]
+position = Vector2(216, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 15" type="Sprite2D" parent="Display Array/Row F"]
+position = Vector2(232, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 16" type="Sprite2D" parent="Display Array/Row F"]
+position = Vector2(248, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Row G" type="Node2D" parent="Display Array"]
+position = Vector2(0, 96)
+
+[node name="Pixel 1" type="Sprite2D" parent="Display Array/Row G"]
+position = Vector2(8, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 2" type="Sprite2D" parent="Display Array/Row G"]
+position = Vector2(24, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 3" type="Sprite2D" parent="Display Array/Row G"]
+position = Vector2(40, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 4" type="Sprite2D" parent="Display Array/Row G"]
+position = Vector2(56, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 5" type="Sprite2D" parent="Display Array/Row G"]
+position = Vector2(72, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 6" type="Sprite2D" parent="Display Array/Row G"]
+position = Vector2(88, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 7" type="Sprite2D" parent="Display Array/Row G"]
+position = Vector2(104, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 8" type="Sprite2D" parent="Display Array/Row G"]
+position = Vector2(120, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 9" type="Sprite2D" parent="Display Array/Row G"]
+position = Vector2(136, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 10" type="Sprite2D" parent="Display Array/Row G"]
+position = Vector2(152, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 11" type="Sprite2D" parent="Display Array/Row G"]
+position = Vector2(168, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 12" type="Sprite2D" parent="Display Array/Row G"]
+position = Vector2(184, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 13" type="Sprite2D" parent="Display Array/Row G"]
+position = Vector2(200, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 14" type="Sprite2D" parent="Display Array/Row G"]
+position = Vector2(216, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 15" type="Sprite2D" parent="Display Array/Row G"]
+position = Vector2(232, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 16" type="Sprite2D" parent="Display Array/Row G"]
+position = Vector2(248, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Row H" type="Node2D" parent="Display Array"]
+position = Vector2(0, 112)
+
+[node name="Pixel 1" type="Sprite2D" parent="Display Array/Row H"]
+position = Vector2(8, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 2" type="Sprite2D" parent="Display Array/Row H"]
+position = Vector2(24, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 3" type="Sprite2D" parent="Display Array/Row H"]
+position = Vector2(40, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 4" type="Sprite2D" parent="Display Array/Row H"]
+position = Vector2(56, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 5" type="Sprite2D" parent="Display Array/Row H"]
+position = Vector2(72, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 6" type="Sprite2D" parent="Display Array/Row H"]
+position = Vector2(88, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 7" type="Sprite2D" parent="Display Array/Row H"]
+position = Vector2(104, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 8" type="Sprite2D" parent="Display Array/Row H"]
+position = Vector2(120, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 9" type="Sprite2D" parent="Display Array/Row H"]
+position = Vector2(136, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 10" type="Sprite2D" parent="Display Array/Row H"]
+position = Vector2(152, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 11" type="Sprite2D" parent="Display Array/Row H"]
+position = Vector2(168, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 12" type="Sprite2D" parent="Display Array/Row H"]
+position = Vector2(184, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 13" type="Sprite2D" parent="Display Array/Row H"]
+position = Vector2(200, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 14" type="Sprite2D" parent="Display Array/Row H"]
+position = Vector2(216, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 15" type="Sprite2D" parent="Display Array/Row H"]
+position = Vector2(232, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 16" type="Sprite2D" parent="Display Array/Row H"]
+position = Vector2(248, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Row I" type="Node2D" parent="Display Array"]
+position = Vector2(0, 128)
+
+[node name="Pixel 1" type="Sprite2D" parent="Display Array/Row I"]
+position = Vector2(8, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 2" type="Sprite2D" parent="Display Array/Row I"]
+position = Vector2(24, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 3" type="Sprite2D" parent="Display Array/Row I"]
+position = Vector2(40, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 4" type="Sprite2D" parent="Display Array/Row I"]
+position = Vector2(56, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 5" type="Sprite2D" parent="Display Array/Row I"]
+position = Vector2(72, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 6" type="Sprite2D" parent="Display Array/Row I"]
+position = Vector2(88, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 7" type="Sprite2D" parent="Display Array/Row I"]
+position = Vector2(104, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 8" type="Sprite2D" parent="Display Array/Row I"]
+position = Vector2(120, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 9" type="Sprite2D" parent="Display Array/Row I"]
+position = Vector2(136, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 10" type="Sprite2D" parent="Display Array/Row I"]
+position = Vector2(152, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 11" type="Sprite2D" parent="Display Array/Row I"]
+position = Vector2(168, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 12" type="Sprite2D" parent="Display Array/Row I"]
+position = Vector2(184, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 13" type="Sprite2D" parent="Display Array/Row I"]
+position = Vector2(200, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 14" type="Sprite2D" parent="Display Array/Row I"]
+position = Vector2(216, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 15" type="Sprite2D" parent="Display Array/Row I"]
+position = Vector2(232, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Pixel 16" type="Sprite2D" parent="Display Array/Row I"]
+position = Vector2(248, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_oc1lo")
+
+[node name="Game Manager" type="Node2D" parent="." node_paths=PackedStringArray("conductor", "display", "qr_picture", "map_reader", "map_display", "ui_display", "beat_display", "sound_player")]
+script = ExtResource("3_y15ei")
+conductor = NodePath("../Conductor")
+display = NodePath("../Display Array")
+qr_picture = NodePath("../QR Code")
+qr_tmg = ExtResource("1_2f3dj")
+qr_badc = ExtResource("5_tel4y")
+qr_neongarten = ExtResource("6_qkpxi")
+qr_wadc = ExtResource("7_5q0nq")
+map_reader = NodePath("../MapReader")
+map_display = NodePath("../MapDisplay")
+ui_display = NodePath("../UIDisplay")
+beat_display = NodePath("../BeatDisplay")
+sound_player = NodePath("../Sound Player")
+
+[node name="Music Player" type="AudioStreamPlayer" parent="."]
+
+[node name="Sound Player" type="AudioStreamPlayer" parent="."]
+max_polyphony = 4
+script = ExtResource("4_4168y")
+
+[node name="Conductor" type="Node" parent="." node_paths=PackedStringArray("music_player")]
+script = ExtResource("4_sffhh")
+beats_per_minute = 80.0
+tutorial_song_120 = ExtResource("23_vxglm")
+music_player = NodePath("../Music Player")
+
+[node name="BeatDisplay" type="Node" parent="." node_paths=PackedStringArray("conductor", "display")]
+script = ExtResource("6_surke")
+conductor = NodePath("../Conductor")
+display = NodePath("../Display Array")
+
+[node name="MapReader" type="Node" parent="."]
+script = ExtResource("7_dngg8")
+
+[node name="MapDisplay" type="Node" parent="." node_paths=PackedStringArray("display")]
+script = ExtResource("8_fk1fs")
+display = NodePath("../Display Array")
+
+[node name="UIDisplay" type="Node" parent="." node_paths=PackedStringArray("display")]
+script = ExtResource("9_l8kbo")
+display = NodePath("../Display Array")
+
+[connection signal="finished" from="Music Player" to="Conductor" method="_on_music_player_finished"]
+[connection signal="close_out_beat" from="Conductor" to="Game Manager" method="_on_conductor_close_out_beat"]
+[connection signal="half_beat" from="Conductor" to="Game Manager" method="_on_conductor_half_beat"]
+[connection signal="on_beat" from="Conductor" to="Game Manager" method="_on_conductor_on_beat"]
+[connection signal="on_beat_2" from="Conductor" to="Game Manager" method="_on_conductor_on_beat_2"]
+[connection signal="on_beat_3" from="Conductor" to="Game Manager" method="_on_conductor_on_beat_3"]
+[connection signal="on_beat_4" from="Conductor" to="Game Manager" method="_on_conductor_on_beat_4"]
+[connection signal="on_new_measure" from="Conductor" to="Game Manager" method="_on_conductor_on_new_measure"]

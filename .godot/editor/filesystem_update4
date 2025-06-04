@@ -1,0 +1,4 @@
+res://scenes/main.tscn
+res://scripts/conductor.gd
+res://scripts/sound_player.gd
+res://scenes/Title.tscn

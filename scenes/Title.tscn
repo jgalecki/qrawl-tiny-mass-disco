@@ -1,0 +1,126 @@
+[gd_scene load_steps=43 format=3 uid="uid://wrp7w8hw6hqx"]
+
+[ext_resource type="Texture2D" uid="uid://o6dfksfmfqth" path="res://Sprite/title1.png" id="1_ascc0"]
+[ext_resource type="Script" uid="uid://qbimear27weh" path="res://scripts/title_screen.gd" id="1_awox1"]
+[ext_resource type="Texture2D" uid="uid://bo41q2mwsovfo" path="res://Sprite/title2.png" id="3_uo2iq"]
+[ext_resource type="Texture2D" uid="uid://bv2aplj1ohhjp" path="res://Sprite/Tutorial 1.png" id="4_33xj2"]
+[ext_resource type="Texture2D" uid="uid://cd2hvlfmdioue" path="res://Sprite/Tutorial 2.png" id="5_7xdyw"]
+[ext_resource type="Texture2D" uid="uid://dmuwxkmcyyq5l" path="res://Sprite/Tutorial 2b.png" id="5_nslpc"]
+[ext_resource type="Texture2D" uid="uid://dqs3skxxa8mx2" path="res://Sprite/Tutorial 2c.png" id="6_f4u0r"]
+[ext_resource type="Texture2D" uid="uid://cq6n5fqucd15e" path="res://Sprite/Tutorial 4.png" id="7_daqq4"]
+[ext_resource type="Texture2D" uid="uid://dcckt0gfxfm42" path="res://Sprite/Tutorial 5.png" id="8_rxdtn"]
+[ext_resource type="Texture2D" uid="uid://3jqg557p6ev1" path="res://Sprite/Tutorial 6.png" id="9_vn7wy"]
+[ext_resource type="Texture2D" uid="uid://bjio70moys0nu" path="res://Sprite/Tutorial 7.png" id="10_ddf2s"]
+[ext_resource type="Texture2D" uid="uid://cxyialx3sog8o" path="res://Sprite/Tutorial 8.png" id="11_d3dnu"]
+[ext_resource type="Texture2D" uid="uid://c426ehywmw7c1" path="res://Sprite/Tutorial 9.png" id="12_qoxrx"]
+[ext_resource type="Texture2D" uid="uid://cjvbt0nsk3q1f" path="res://Sprite/Tutorial 10.png" id="13_1xrny"]
+[ext_resource type="Texture2D" uid="uid://hb6btbqwoyds" path="res://Sprite/Tutorial 11.png" id="14_bh3hs"]
+[ext_resource type="Texture2D" uid="uid://k7glcvjotxpm" path="res://Sprite/Tutorial 11a.png" id="15_jvwf4"]
+[ext_resource type="Texture2D" uid="uid://dybk82ben8pv3" path="res://Sprite/Tutorial 12.png" id="16_gjcie"]
+[ext_resource type="Texture2D" uid="uid://b2bcuafjund10" path="res://Sprite/Tutorial 13.png" id="17_jmfbe"]
+[ext_resource type="Texture2D" uid="uid://baa83f2urtmjm" path="res://Sprite/Tutorial 14.png" id="18_03ptv"]
+[ext_resource type="Texture2D" uid="uid://cp0gqj2mkpj6h" path="res://Sprite/Tutorial 15.png" id="19_plfhb"]
+[ext_resource type="Texture2D" uid="uid://gvadqowkonus" path="res://Sprite/Tutorial 16.png" id="20_k2omh"]
+[ext_resource type="Texture2D" uid="uid://bntqp0x1dcgx" path="res://Sprite/Tutorial 17.png" id="21_a5b4s"]
+[ext_resource type="Texture2D" uid="uid://vtvq64ghsg06" path="res://Sprite/Tutorial 18.png" id="22_63gyn"]
+[ext_resource type="Texture2D" uid="uid://bus8x5xg7st0w" path="res://Sprite/Tutorial 19.png" id="23_rw3te"]
+[ext_resource type="Texture2D" uid="uid://c8bpwv6ph7n6c" path="res://Sprite/Tutorial 20.png" id="24_uu6d8"]
+[ext_resource type="Texture2D" uid="uid://ectsaxyqmpcl" path="res://Sprite/Tutorial 21.png" id="25_5ctxk"]
+[ext_resource type="Texture2D" uid="uid://b8p5kg8j2n5ms" path="res://Sprite/Tutorial 22.png" id="26_4tfvx"]
+[ext_resource type="Texture2D" uid="uid://dwu3eghm4me04" path="res://Sprite/Tutorial 23.png" id="27_7xdyw"]
+[ext_resource type="Texture2D" uid="uid://dehd4iji5dv30" path="res://Sprite/Tutorial 24.png" id="28_rxdtn"]
+[ext_resource type="Texture2D" uid="uid://b5la8c3qqydkn" path="res://Sprite/Tutorial 25.png" id="29_vn7wy"]
+[ext_resource type="Texture2D" uid="uid://ywwuwo361057" path="res://Sprite/Tutorial 26.png" id="30_ddf2s"]
+[ext_resource type="Texture2D" uid="uid://bgt6dgxiisux7" path="res://Sprite/Tutorial 27.png" id="31_d3dnu"]
+[ext_resource type="Texture2D" uid="uid://b7t3ly36oq17d" path="res://Sprite/credits.png" id="33_2t3i1"]
+[ext_resource type="Texture2D" uid="uid://dfybgf5jnfg5p" path="res://Sprite/Tutorial 28.png" id="33_5b5nw"]
+[ext_resource type="AudioStream" uid="uid://drngck6o8io4t" path="res://music/Tutorial.wav" id="34_2t3i1"]
+[ext_resource type="Script" uid="uid://cvew1u6go6ywu" path="res://scripts/sound_player.gd" id="34_7xdyw"]
+[ext_resource type="Texture2D" uid="uid://con6ur6eqxcb8" path="res://Sprite/Tutorial 29.png" id="34_tnv0x"]
+[ext_resource type="Texture2D" uid="uid://dt8u2tmwjfm0h" path="res://Sprite/Tutorial 30.png" id="35_6vh3x"]
+[ext_resource type="Texture2D" uid="uid://3sv24s7wl8u3" path="res://Sprite/Tutorial 31.png" id="36_sahdq"]
+[ext_resource type="Texture2D" uid="uid://fiy58e8d1oet" path="res://Sprite/Tutorial 32.png" id="37_p3vlm"]
+[ext_resource type="Texture2D" uid="uid://bgc2uwfbe3d3r" path="res://Sprite/Tutorial 33.png" id="38_2yksv"]
+[ext_resource type="Script" uid="uid://73gtkkalwf8h" path="res://scripts/conductor.gd" id="49_6ljp3"]
+
+[node name="Title" type="Control" node_paths=PackedStringArray("conductor", "sound_player", "screen")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_awox1")
+conductor = NodePath("Conductor")
+sound_player = NodePath("Sound Player")
+title_1 = ExtResource("1_ascc0")
+title_2 = ExtResource("3_uo2iq")
+tutorial_1 = ExtResource("4_33xj2")
+tutorial_2 = ExtResource("5_7xdyw")
+tutorial_3 = ExtResource("5_nslpc")
+tutorial_4 = ExtResource("6_f4u0r")
+tutorial_5 = ExtResource("7_daqq4")
+tutorial_6 = ExtResource("8_rxdtn")
+tutorial_7 = ExtResource("9_vn7wy")
+tutorial_8 = ExtResource("10_ddf2s")
+tutorial_9 = ExtResource("11_d3dnu")
+tutorial_10 = ExtResource("12_qoxrx")
+tutorial_11 = ExtResource("13_1xrny")
+tutorial_12 = ExtResource("14_bh3hs")
+tutorial_13 = ExtResource("15_jvwf4")
+tutorial_14 = ExtResource("16_gjcie")
+tutorial_15 = ExtResource("17_jmfbe")
+tutorial_16 = ExtResource("18_03ptv")
+tutorial_17 = ExtResource("19_plfhb")
+tutorial_18 = ExtResource("20_k2omh")
+tutorial_19 = ExtResource("21_a5b4s")
+tutorial_20 = ExtResource("22_63gyn")
+tutorial_21 = ExtResource("23_rw3te")
+tutorial_22 = ExtResource("24_uu6d8")
+tutorial_23 = ExtResource("25_5ctxk")
+tutorial_24 = ExtResource("26_4tfvx")
+tutorial_25 = ExtResource("27_7xdyw")
+tutorial_26 = ExtResource("28_rxdtn")
+tutorial_27 = ExtResource("29_vn7wy")
+tutorial_28 = ExtResource("28_rxdtn")
+tutorial_29 = ExtResource("29_vn7wy")
+tutorial_30 = ExtResource("30_ddf2s")
+tutorial_31 = ExtResource("31_d3dnu")
+tutorial_32 = ExtResource("30_ddf2s")
+tutorial_33 = ExtResource("31_d3dnu")
+tutorial_34 = ExtResource("33_5b5nw")
+tutorial_35 = ExtResource("34_tnv0x")
+tutorial_36 = ExtResource("33_5b5nw")
+tutorial_37 = ExtResource("34_tnv0x")
+tutorial_38 = ExtResource("35_6vh3x")
+tutorial_39 = ExtResource("36_sahdq")
+tutorial_40 = ExtResource("37_p3vlm")
+tutorial_41 = ExtResource("38_2yksv")
+credits = ExtResource("33_2t3i1")
+screen = NodePath("TextureRect")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ascc0")
+expand_mode = 2
+
+[node name="Music Player" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("34_2t3i1")
+
+[node name="Sound Player" type="AudioStreamPlayer" parent="."]
+max_polyphony = 4
+script = ExtResource("34_7xdyw")
+
+[node name="Conductor" type="Node" parent="." node_paths=PackedStringArray("music_player")]
+script = ExtResource("49_6ljp3")
+beats_per_minute = 80.0
+tutorial_song_120 = ExtResource("34_2t3i1")
+music_player = NodePath("../Music Player")
+
+[connection signal="on_beat" from="Conductor" to="." method="_on_conductor_on_beat"]

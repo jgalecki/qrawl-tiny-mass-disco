@@ -1,0 +1,51 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1747220178
+export_presets.cfg::TextFile::-1::1747219294::0::1::::<><>::
+icon.svg::CompressedTexture2D::37995280313209013::1737770899::1743465856::1::::<><>::
+::res://maps/::1737778647
+tmg_map.txt::TextFile::-1::1737778647::0::1::::<><>::
+::res://music/::1743465857
+All Three.wav::AudioStreamWAV::3897052910379082462::1737727085::1743465856::1::::<><>::
+Bar_Code_LOOP_80bpm.wav::AudioStreamWAV::5238763008269704641::1630017897::1743465857::1::::<><>::
+Blue_Razz_LOOP_120bpm.wav::AudioStreamWAV::5330983512780224641::1630016995::1743465857::1::::<><>::
+Dirty_Fungus_LOOP_122bpm.wav::AudioStreamWAV::5956260983705466365::1630016773::1743465857::1::::<><>::
+Island_FM_LOOP_115bpm.wav::AudioStreamWAV::2961437039834244185::1630017139::1743465857::1::::<><>::
+Just One.wav::AudioStreamWAV::6012545510478468748::1737727133::1743465856::1::::<><>::
+Two.wav::AudioStreamWAV::6788265883668474898::1737727115::1743465856::1::::<><>::
+::res://scenes/::1747219948
+main.tscn::PackedScene::4888350676427794807::1747219948::0::1::::<><>::res://scripts/display_array.gd<>uid://dippjfdqaacsc::::res://Sprite/blank_square.png<>res://scripts/game_manager.gd<>res://scripts/sound_player.gd<>res://scripts/conductor.gd<>uid://cgvxwqr3j07ub::::res://music/Bar_Code_LOOP_80bpm.wav<>uid://c1nq4fwq7vb0l::::res://sounds/Player Attack.wav<>uid://crvq40bxluxv::::res://sounds/Amulet Pickup.wav<>uid://dq6eud0vjq8be::::res://sounds/UI Confirm.wav<>uid://bqpng11nnuknr::::res://sounds/Bad Hit.wav<>uid://b8a5m7gwjahuq::::res://sounds/Monster Hit.wav<>uid://bigso2j75iy54::::res://music/Island_FM_LOOP_115bpm.wav<>res://scripts/beat_display.gd<>uid://c1jpv6e45lt2y::::res://sounds/Monster Death.wav<>uid://cq4i0o5rhl5mf::::res://music/Dirty_Fungus_LOOP_122bpm.wav<>res://scripts/map_reader.gd<>uid://qnresqpnt7ao::::res://sounds/UI Fail.wav<>res://scripts/map_display.gd<>uid://uustp55ks01s::::res://sounds/Fire Hit.wav<>res://scripts/ui_display.gd<>uid://d0le0he4i2a4x::::res://sounds/Dig.wav<>uid://425clouuy1fg::::res://sounds/Wall Bump.wav<>uid://lj6gle78jscs::::res://sounds/Gold Pickup.wav<>uid://tcj3240o14j5::::res://sounds/Victory.wav<>uid://ct1aiwtwxmxc6::::res://sounds/Game Over.wav<>uid://c4ixuj0fit6cw::::res://sounds/Missed Hit.wav
+::res://scripts/::1747219905
+beat_display.gd::GDScript::-1::1737931228::0::1::::BeatDisplay<>Node<>::
+conductor.gd::GDScript::-1::1747219905::0::1::::Conductor<>Node<>::
+display_array.gd::GDScript::-1::1737835576::0::1::::DisplayArray<>Node<>::
+game_manager.gd::GDScript::-1::1747219828::0::1::::<>Node<>::
+game_state.gd::GDScript::-1::1747132257::0::1::::GameState<>Node<>::
+gold.gd::GDScript::-1::1737894584::0::1::::Gold<>Resource<>::
+map_display.gd::GDScript::-1::1747132041::0::1::::MapDisplay<>Node<>::
+map_reader.gd::GDScript::-1::1747132277::0::1::::MapReader<>Node<>::
+monster.gd::GDScript::-1::1737927490::0::1::::Monster<>Unit<>::
+player.gd::GDScript::-1::1737896067::0::1::::Player<>Unit<>::
+player_controller.gd::GDScript::-1::1747132473::0::1::::PlayerController<>Node<>::
+sound_player.gd::GDScript::-1::1746991463::0::1::::SoundPlayer<>AudioStreamPlayer<>::
+trap.gd::GDScript::-1::1746964621::0::1::::Trap<>Resource<>::
+ui_display.gd::GDScript::-1::1737942646::0::1::::UIDisplay<>Node<>::
+unit.gd::GDScript::-1::1737807029::0::1::::Unit<>Resource<>::
+::res://sounds/::1743465856
+Amulet Pickup.wav::AudioStreamWAV::176777300519547035::1711726147::1743465856::1::::<><>::
+Bad Hit.wav::AudioStreamWAV::3541209290262758787::1711726153::1743465856::1::::<><>::
+Dig.wav::AudioStreamWAV::8936979185315507433::1711726154::1743465856::1::::<><>::
+Fire Hit.wav::AudioStreamWAV::1446192099367380570::1711726152::1743465856::1::::<><>::
+Game Over.wav::AudioStreamWAV::6160118690361411215::1711726146::1743465856::1::::<><>::
+Gold Pickup.wav::AudioStreamWAV::792550206778560502::1711726144::1743465856::1::::<><>::
+Missed Hit.wav::AudioStreamWAV::6826265573202258254::1711726145::1743465856::1::::<><>::
+Monster Death.wav::AudioStreamWAV::6617280594086326610::1711726147::1743465856::1::::<><>::
+Monster Hit.wav::AudioStreamWAV::4704497154085668644::1711726152::1743465856::1::::<><>::
+Player Attack.wav::AudioStreamWAV::6625611770058331401::1711726150::1743465856::1::::<><>::
+UI Cancel.wav::AudioStreamWAV::6122856947572603353::1711726153::1743465856::1::::<><>::
+UI Confirm.wav::AudioStreamWAV::8346558040669836954::1711726151::1743465856::1::::<><>::
+UI Fail.wav::AudioStreamWAV::1150898711900805462::1711726153::1743465856::1::::<><>::
+Victory.wav::AudioStreamWAV::1338314703880402132::1711726146::1743465856::1::::<><>::
+Wall Bump.wav::AudioStreamWAV::2093040346553878936::1711726154::1743465856::1::::<><>::
+::res://Sprite/::1743465856
+blank_square.png::CompressedTexture2D::7752665561509233582::1737771149::1743465856::1::::<><>::
+icon.png::CompressedTexture2D::7389208898578098119::1737942915::1743465856::1::::<><>::

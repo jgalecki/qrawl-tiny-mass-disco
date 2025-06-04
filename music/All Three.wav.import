@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bvr05lh208263"
+path="res://.godot/imported/All Three.wav-378b0029d325b1fd709b2f81d91a9c9e.sample"
+
+[deps]
+
+source_file="res://music/All Three.wav"
+dest_files=["res://.godot/imported/All Three.wav-378b0029d325b1fd709b2f81d91a9c9e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

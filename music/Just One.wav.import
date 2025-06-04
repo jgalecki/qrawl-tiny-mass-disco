@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://crwr0mrit0nqa"
+path="res://.godot/imported/Just One.wav-78a2a677ce7fdba13234dedbb3ca7f84.sample"
+
+[deps]
+
+source_file="res://music/Just One.wav"
+dest_files=["res://.godot/imported/Just One.wav-78a2a677ce7fdba13234dedbb3ca7f84.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
