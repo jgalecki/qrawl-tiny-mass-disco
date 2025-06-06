@@ -42,3 +42,5 @@ That's the tricky part about dungeon crawling to the beat! Hopefully you've foun
 
 
 As a final aside, I cheat the game's 16 x 9 pixel restriction twice. Once for credits for legibility / time's sake, and once after dungeon is beaten. Winning the game reveals that the whole dungeon is a giant QR code. I have a future game idea to make another QR dungeon crawler (the "Qrawl" of the game's title) that can take a picture of any random QR code and make it into a dungeon. I love the idea of taking ads and other intrusions into our daily lives and turning them into our own playgrounds.
+
+This project is licensed under the terms of the MIT license
