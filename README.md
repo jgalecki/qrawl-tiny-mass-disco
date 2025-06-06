@@ -1,3 +1,5 @@
+![release gif](https://github.com/user-attachments/assets/71592007-b9d1-43e0-ac41-d55bec9040b0)
+
 Hello! Welcome to QRawl: Tiny Mass Disco, a 16x9 rhythm dungeon crawler. This game was created as part of the the Tiny Mass Games project, a loose collective of game devs focused on creating polished short-form games in two-month dev cycles. This game came out of our tenth season, and I decided to open-source the code after completing it. The official web version of the game can be found at https://joshuagalecki.itch.io/qrawl-tiny-mass-disco.
 
 There are two important things to understand in terms of designing a rhythm dungeon crawler. The first is the rhythm part of it. For the basics of the Conductor class and creating a rhythm game, I'll refer you to fizzd's legendary tutorial on A Dance of Ice and Fire, archived at https://web.archive.org/web/20190317082117/http://ludumdare.com/compo/2014/09/09/an-ld48-rhythm-game-part-2/. Honestly, I've done three rhythm games and prototypes now and I dredge that up every time. Classic. 
