@@ -4,7 +4,7 @@ Hello! Welcome to QRawl: Tiny Mass Disco, a 16x9 rhythm dungeon crawler. This ga
 
 There are two important things to understand in terms of designing a rhythm dungeon crawler. The first is the rhythm part of it. For the basics of the Conductor class and creating a rhythm game, I'll refer you to fizzd's legendary tutorial on A Dance of Ice and Fire, archived at https://web.archive.org/web/20190317082117/http://ludumdare.com/compo/2014/09/09/an-ld48-rhythm-game-part-2/. Honestly, I've done three rhythm games and prototypes now and I dredge that up every time. Classic. 
 
-The second important thing to understand is the dungeon cralwer part of the game. Many rhythm games don't have to deal with this side, as something like Guitar Hero only rates input instead of really reacting to it. Lots of cues have been taken from Crypt of the Necrodancer, since they invented the genre combination.
+The second important thing to understand is the dungeon crawler part of the game. Many rhythm games don't have to deal with this side, as something like Guitar Hero only rates input instead of really reacting to it. Lots of cues have been taken from Crypt of the Necrodancer, since they invented the genre combination.
 
 The player's input can be in eight different states:
 
